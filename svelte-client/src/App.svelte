@@ -1,10 +1,19 @@
 <script>
+	import Button from "./components/Interface/Button.svelte";
+	import TextInput from "./components/Interface/TextInput.svelte";
 	export let name;
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Hello  {name}!</h1>
+	<p>dfqddd</p>
+	<Button>
+          Log Out
+      </Button>
+	<TextInput
+        classes="margin-left inline longer"
+        placeholder="Enter list name"
+         />
 </main>
 
 <style>
