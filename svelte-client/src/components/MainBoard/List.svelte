@@ -5,10 +5,10 @@
   import { quintOut } from 'svelte/easing';
   const dispatch = createEventDispatcher();
 
-  import { fetchGet, fetchPost } from "../helpers.js";
+  import { fetchPost, fetchGet } from "../../helpers";
   import Note from "./Note.svelte";
-  import Button from "../UI/Button.svelte";
-  import TextInput from "../UI/TextInput.svelte";
+  import Button from "../Interface/Button.svelte";
+  import TextInput from "../Interface/TextInput.svelte";
 
 
   export let id;

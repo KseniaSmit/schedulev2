@@ -2,7 +2,7 @@
   import { scale } from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
 
-  import { fetchPost } from "../helpers.js";
+  import { fetchPost} from "../../helpers";
   import { createEventDispatcher } from "svelte";
   let dispatch = createEventDispatcher();
 

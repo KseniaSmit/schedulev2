@@ -2,7 +2,7 @@
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
-  import Button from "../UI/Button.svelte";
+  import Button from "../Interface/Button.svelte";
 
 
   export let note;

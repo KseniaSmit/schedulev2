@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bfc3527-f2ab-4b11-b7a5-b3782528e67a" name="Changes" comment="" />
+    <list default="true" id="9bfc3527-f2ab-4b11-b7a5-b3782528e67a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte-client/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/App.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/LogSign/Login.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/LogSign/Login.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Board.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Board.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/EditNote.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/EditNote.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/List.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/List.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Note.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Note.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +19,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Button" />
+        <option value="Error" />
+        <option value="Login" />
+        <option value="Note" />
+        <option value="EditNote" />
+        <option value="List" />
+        <option value="Board" />
         <option value="Python Script" />
       </list>
     </option>
@@ -37,14 +53,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="schedulev2" type="PythonConfigurationType" factoryName="Python">
+      <module name="schedulev2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +93,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652112941935</updated>
-      <workItem from="1652112957251" duration="5372000" />
+      <workItem from="1652112957251" duration="12242000" />
+      <workItem from="1652269158057" duration="17599000" />
     </task>
     <servers />
   </component>

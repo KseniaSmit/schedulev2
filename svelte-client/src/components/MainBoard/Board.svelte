@@ -3,10 +3,10 @@
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
-  import { fetchGet, fetchPost } from "../helpers.js";
+  import { fetchGet, fetchPost } from "../../helpers";
   import List from "./List.svelte";
-  import Button from "../UI/Button.svelte";
-  import TextInput from "../UI/TextInput.svelte";
+  import Button from "../Interface/Button.svelte";
+  import TextInput from "../Interface/TextInput.svelte";
 
 
   onMount(() => {
@@ -89,7 +89,7 @@
     <form>
       <TextInput
         classes="margin-left inline longer"
-        placeholder="Enter list name"
+        placeholder="Введите название списка"
         on:input={event => listName = event.target.value}
         value={listName} />
     <br>
@@ -109,20 +109,21 @@
 
 :global(body) {
   margin: 0;
-  background-color: #8b00ff;
+  background-color: #E0B0FF;
 }
 
 :global(:root) {
-  --theme-color: hsl(212, 33%, 89%);
+  --theme-color: #FFF;
 }
 
 .header {
   position: fixed;
   width: 100%;
+  height: 50px;
   display: flex;
   top: 0;
   left: 0;
-  background-color: hsl(290, 84%, 48%);
+  background-color: #EA8DF7;
   justify-content: flex-end;
   align-content: center;
 }
@@ -138,8 +139,8 @@
 
 .logout-button {
   position: relative;
-  right: 3.5px;
-  top: 3.5px;
+  right: 10px;
+  top: 5px;
 }
 
 .column {
@@ -154,13 +155,11 @@
 }
 
 .new-list {
-  /*display: flex;*/
   margin: 12px;
   margin-top: 1.2rem;
 }
 
 .new-list {
-  /*display: flex;*/
   margin: 12px;
   margin-top: 1.2rem;
 }

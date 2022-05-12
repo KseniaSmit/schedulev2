@@ -1,39 +1,58 @@
 <script>
-	import Button from "./components/Interface/Button.svelte";
-	import TextInput from "./components/Interface/TextInput.svelte";
-	export let name;
+	import { onMount } from "svelte";
+	import Error from "./components/Interface/Error.svelte";
+	import Login from "./components/LogSign/Login.svelte";
+	import Board from "./components/MainBoard/Board.svelte";
+	let errorMessage;
+	let errorShow;
+	let loggedIn;
+
+
+	onMount(async () => {
+    const res = await fetch(
+      "/checkLogin");
+    const response = await res.json();
+    if (response.logged_in) {
+      loggedIn = true;
+    } else {
+      loggedIn = false;
+    }
+  });
+
+
+	async function logoutUser() {
+    loggedIn = false;
+    const res = await fetch(`/logout`);
+    const response = await res.json();
+  }
+
+  function displayError(event) {
+    errorMessage = event.detail;
+    errorShow = true;
+  }
+
 </script>
 
-<main>
-	<h1>Hello  {name}!</h1>
-	<p>dfqddd</p>
-	<Button>
-          Log Out
-      </Button>
-	<TextInput
-        classes="margin-left inline longer"
-        placeholder="Enter list name"
-         />
-</main>
+{#if loggedIn == false}
+  <Login
+    on:login-user={event => loggedIn = event.detail.success}
+    on:display-error={displayError} />
+{:else if loggedIn}
+  <Board on:logout-user={logoutUser}
+    on:display-error={displayError} />
+{:else}
+ <div></div>
+{/if}
+
+<Error show={errorShow} message={errorMessage}
+  on:close-error={() => errorShow = false} />
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+	:global(body) {
+  margin: 0;
+  background-color: #FFFFFF;
+}
+	:global(:root) {
+  --theme-color: #E0B0FF;
+}
 </style>

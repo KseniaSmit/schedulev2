@@ -2,9 +2,9 @@
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
-  import { fetchPost } from "../helpers.js";
-  import Button from "../UI/Button.svelte";
-  import TextInput from "../UI/TextInput.svelte";
+  import { fetchPost } from "../../helpers";
+  import Button from "../Interface/Button.svelte";
+  import TextInput from "../Interface/TextInput.svelte";
 
 
   let email = "";
@@ -55,7 +55,7 @@
     <div class="form">
     <form>
     <label>
-    Email<br>
+    E-mail<br>
 
     <TextInput
       classes={"longer"}
@@ -117,7 +117,7 @@
 <style>
 
 #card {
-  background-color: hsla(258, 100%, 99%, 1);
+  background-color: #FFF;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
