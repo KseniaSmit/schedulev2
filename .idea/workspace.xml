@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9bfc3527-f2ab-4b11-b7a5-b3782528e67a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte-client/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/App.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/LogSign/Login.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/LogSign/Login.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Board.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Board.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/EditNote.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/EditNote.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/List.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/List.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Note.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/svelte-client/src/components/MainBoard/Note.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652112941935</updated>
       <workItem from="1652112957251" duration="12242000" />
-      <workItem from="1652269158057" duration="17599000" />
+      <workItem from="1652269158057" duration="18730000" />
     </task>
     <servers />
   </component>
