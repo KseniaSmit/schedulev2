@@ -50,7 +50,7 @@
 <style>
 	:global(body) {
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 	:global(:root) {
   --theme-color: #E0B0FF;
