@@ -180,8 +180,12 @@ db.create_all()
 
 
 @app.route("/")
-def client():
-    return send_from_directory("svelte-client/public", "index.html")
+def base():
+    if DEVELOPMENT:
+        print(f"\n*{'*' * 25}\n*\n* Development mode: {DEVELOPMENT}\n*\n*{'*' * 25}\n")
+        return send_from_directory("client/public", "index.html")
+    return render_template("index.html")
+
 
 
 @app.route("/<path:path>")
