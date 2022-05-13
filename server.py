@@ -7,7 +7,8 @@ from itsdangerous import TimedSerializer as Serializer
 import os
 import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="svelte-client/public", static_folder="svelte-client/public/build")
+DEVELOPMENT = bool(os.environ.get("FLASK_DEVELOPMENT"))
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://postgres:1234@localhost/schedulev2'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -178,10 +179,14 @@ class User(db.Model, UserMixin):
 db.create_all()
 
 
+@app.route("/")
+def client():
+    return send_from_directory("svelte-client/public", "index.html")
+
 
 @app.route("/<path:path>")
 def home(path):
-    return send_from_directory("client/public", path)
+    return send_from_directory("svelte-client/public", path)
 
 
 @app.route("/checkLogin")
@@ -308,6 +313,19 @@ def edit_note(note_id):
     note.body = body
     db.session.commit()
     return jsonify(success=True, message=(f"note {note_id} updated to '{body}'"))
+
+
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    r.headers['Cache-Control'] = 'public, max-age=0'
+    return r
 
 
 if __name__ == "__main__":
