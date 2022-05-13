@@ -21,7 +21,9 @@
 button:hover {
   cursor: pointer;
 }
-
+.c {
+    text-align: center;
+}
 .inline {
   display: inline;
 }

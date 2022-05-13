@@ -34,9 +34,8 @@
 
 .error {
   position: fixed;
-  bottom: 0;
-  background-color: #111;
-  color: hsla(258, 100%, 99%, 1);
+  background-color: #494747;
+  color: #FFFFFF;
   padding: 1.5rem 5rem;
   border-radius: 3px;
 }

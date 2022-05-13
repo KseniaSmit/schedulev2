@@ -85,7 +85,7 @@
       value={confirmPassword} />
     </label>
 
-    <Button type="submit"
+    <Button classes={"c"} type="submit"
       on:click={signUpUser}>
         Регистрация
     </Button>
@@ -118,8 +118,8 @@
   padding: 12px;
   min-width: 25%;
   max-width: 30%;
-  min-height: 20rem;
-  margin: 5rem auto;
+  min-height: 300px;
+  margin: 80px auto;
   border-radius: 3px;
 }
 h1 {
@@ -127,12 +127,12 @@ h1 {
 }
 .form {
   position: relative;
-  margin: 4rem auto;
+  margin: 80px auto;
   left: 85px;
 }
 
 label {
-  margin-bottom: 1.5rem;
+  margin-bottom: 25px;
 }
 
 </style>

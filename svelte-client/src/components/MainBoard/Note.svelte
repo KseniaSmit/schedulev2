@@ -46,7 +46,6 @@
   </div>
   <div class="edit-button">
     <button on:click={() => editNote = true}>✎</button>
-    <!-- <button on:click={deleteNote}>✕</button> -->
   </div>
 </div>
 
