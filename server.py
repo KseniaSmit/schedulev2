@@ -181,10 +181,7 @@ db.create_all()
 
 @app.route("/")
 def base():
-    if DEVELOPMENT:
-        print(f"\n*{'*' * 25}\n*\n* Development mode: {DEVELOPMENT}\n*\n*{'*' * 25}\n")
-        return send_from_directory("client/public", "index.html")
-    return render_template("index.html")
+    return send_from_directory("client/public", "index.html")
 
 
 
