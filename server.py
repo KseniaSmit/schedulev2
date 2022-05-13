@@ -10,7 +10,7 @@ import datetime
 app = Flask(__name__, template_folder="svelte-client/public", static_folder="svelte-client/public/build")
 DEVELOPMENT = bool(os.environ.get("FLASK_DEVELOPMENT"))
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://postgres:1234@localhost/schedulev2'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://rqgljclclymszx:9c5390bd97d83dad8392e6709bbfba4ddc0f7a445ac18e716dc86e7a3fb04e1f@ec2-176-34-211-0.eu-west-1.compute.amazonaws.com:5432/de5al7icgotctb'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY") or "hardkey"
 

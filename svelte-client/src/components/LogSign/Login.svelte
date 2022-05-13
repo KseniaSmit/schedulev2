@@ -122,7 +122,9 @@
   margin: 5rem auto;
   border-radius: 3px;
 }
-
+h1 {
+    text-align: center;
+}
 .form {
   position: relative;
   margin: 4rem auto;
