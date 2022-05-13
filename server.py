@@ -335,4 +335,4 @@ def add_header(r):
 if __name__ == "__main__":
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-    app.run(port=os.Getenv("PORT"))
+    app.run(debug=True)
