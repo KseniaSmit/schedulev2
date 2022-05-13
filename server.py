@@ -181,7 +181,7 @@ db.create_all()
 
 @app.route("/")
 def base():
-    return send_from_directory("client/public", "index.html")
+    return send_from_directory("svelte-client/public", "index.html")
 
 
 
